@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1727366446 source:c:\users\arnas\desktop\c++\pratybos\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727366531 c:\users\arnas\desktop\c++\pratybos\biblioteka.h
+	<iostream>
+	<iomanip>
+	<string>
+	<vector>
+
+1727353237 c:\users\arnas\desktop\c++\pratybos\stud.h
+	"biblioteka.h"
+
+1727366855 source:c:\users\arnas\desktop\c++\pratybos\stud.cpp
+	"Stud.h"
+
