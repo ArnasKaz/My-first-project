@@ -74,21 +74,103 @@
 1727381611 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 3 zingsnis) - copy\stud.h
 	"biblioteka.h"
 
-1727388027 source:c:\users\arnas\desktop\c++\galutiniai variantai\v.pradine sintakse 1\main.cpp
-	"biblioteka.h"
+1727384547 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 4 zingsnis) - copy\stud.cpp
 	"stud.h"
+	<algorithm>
+	<random>
+	<fstream>
+	<sstream>
 
-1727366531 c:\users\arnas\desktop\c++\galutiniai variantai\v.pradine sintakse 1\biblioteka.h
+1727384608 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 4 zingsnis) - copy\stud.h
+	"biblioteka.h"
+
+1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 4 zingsnis) - copy\biblioteka.h
 	<iostream>
 	<iomanip>
 	<string>
 	<vector>
 
-1727381611 c:\users\arnas\desktop\c++\galutiniai variantai\v.pradine sintakse 1\stud.h
+1727384547 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 4 zingsnis) - copy\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727384547 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis) - copy\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis) - copy\biblioteka.h
+	<iostream>
+	<iomanip>
+	<string>
+	<vector>
+
+1727384608 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis) - copy\stud.h
 	"biblioteka.h"
 
-1727388594 source:c:\users\arnas\desktop\c++\galutiniai variantai\v.pradine sintakse 1\stud.cpp
+1727384547 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis) - copy\stud.cpp
 	"stud.h"
 	<algorithm>
 	<random>
+	<fstream>
+	<sstream>
+
+1727384547 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis 2) - copy\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis 2) - copy\biblioteka.h
+	<iostream>
+	<iomanip>
+	<string>
+	<vector>
+
+1727384608 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis 2) - copy\stud.h
+	"biblioteka.h"
+
+1727386382 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (beveik 5 zingsnis 2) - copy\stud.cpp
+	"stud.h"
+	<algorithm>
+	<random>
+	<fstream>
+	<sstream>
+
+1727391401 source:c:\users\arnas\desktop\c++\galutiniai variantai\v0.1\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727366531 c:\users\arnas\desktop\c++\galutiniai variantai\v0.1\biblioteka.h
+	<iostream>
+	<iomanip>
+	<string>
+	<vector>
+
+1727384608 c:\users\arnas\desktop\c++\galutiniai variantai\v0.1\stud.h
+	"biblioteka.h"
+
+1727391572 source:c:\users\arnas\desktop\c++\galutiniai variantai\v0.1\stud.cpp
+	"stud.h"
+	<algorithm>
+	<random>
+	<fstream>
+	<sstream>
+
+1727391401 source:c:\users\arnas\desktop\c++\galutiniai variantai\v0.1 sintakse 1\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727366531 c:\users\arnas\desktop\c++\galutiniai variantai\v0.1 sintakse 1\biblioteka.h
+	<iostream>
+	<iomanip>
+	<string>
+	<vector>
+
+1727384608 c:\users\arnas\desktop\c++\galutiniai variantai\v0.1 sintakse 1\stud.h
+	"biblioteka.h"
+
+1727391572 source:c:\users\arnas\desktop\c++\galutiniai variantai\v0.1 sintakse 1\stud.cpp
+	"stud.h"
+	<algorithm>
+	<random>
+	<fstream>
+	<sstream>
 
