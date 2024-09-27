@@ -3,13 +3,13 @@
 #include "biblioteka.h"
 
 struct Stud{
-std::string vardas, pavarde;
-std::vector<double>ND;
-double vid, med, egz, rez;
+    std::string vardas, pavarde;
+    std::vector<double> ND;
+    double vid, egz, rez;
 };
 
-void ived(Stud &Lok);
-void output(Stud Lok);
+void ived(Stud &Lok, int m);
+void output(const Stud &Lok);
 void val(Stud &Lok);
 
 #endif // STUD_H_INCLUDED
