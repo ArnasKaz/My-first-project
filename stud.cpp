@@ -1,27 +1,50 @@
 #include "stud.h"
 #include <algorithm>
 
-void ived(Stud &Lok, int m) {
+
+void ived(Stud &Lok) {
     cout << "Enter student first name: ";
     cin >> Lok.vardas;
 
     cout << "Enter student last name: ";
     cin >> Lok.pavarde;
 
-    Lok.ND.resize(m);
+    Lok.ND.clear();
+    double grade;
+    string input;
     double sum = 0;
+    int count = 0;
 
-    for (int i = 0; i < m; i++) {
-        cout << "Enter grade for homework " << i + 1 << ": ";
-        cin >> Lok.ND[i];
-        sum += Lok.ND[i];
+
+    while (true) {
+        cout << "Enter homework grade or type 'fin' to finish: ";
+        cin >> input;
+
+        if (input == "fin") {
+            break;
+        }
+
+        try {
+            grade = std::stod(input);
+            Lok.ND.push_back(grade);
+            sum += grade;
+            count++;
+        } catch (const std::invalid_argument&) {
+            cout << "Invalid input. Please enter a valid grade or 'fin'." << endl;
+        }
     }
 
-    Lok.vid = sum / m;
+
+    if (count > 0) {
+        Lok.vid = sum / count;
+    } else {
+        Lok.vid = 0;
+    }
 
     cout << "Enter exam grade: ";
     cin >> Lok.egz;
 }
+
 
 void val(Stud &Lok, bool naudotiMediana) {
     if (naudotiMediana) {
@@ -31,6 +54,7 @@ void val(Stud &Lok, bool naudotiMediana) {
         Lok.rez = 0.4 * Lok.vid + 0.6 * Lok.egz;
     }
 }
+
 
 double skaiciuotiMediana(std::vector<double> &ND) {
     std::sort(ND.begin(), ND.end());
@@ -43,9 +67,9 @@ double skaiciuotiMediana(std::vector<double> &ND) {
     }
 }
 
+
 void output(const Stud &Lok) {
     cout << setw(15) << left << Lok.vardas
          << setw(10) << left << Lok.pavarde
          << setw(15) << right << fixed << setprecision(2) << Lok.rez << endl;
 }
-
