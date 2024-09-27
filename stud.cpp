@@ -1,27 +1,80 @@
 #include "stud.h"
 #include <algorithm>
+#include <random>
 
-void ived(Stud &Lok, int m) {
-    cout << "Enter student first name: ";
+void ived(Stud &Lok) {
+    cout << "Iveskite studento varda: ";
     cin >> Lok.vardas;
 
-    cout << "Enter student last name: ";
+    cout << "Iveskite studento pavarde: ";
     cin >> Lok.pavarde;
 
-    Lok.ND.resize(m);
+    string pasirinkimas;
+    cout << "Ar generuoti studento ivertinimus atsitiktinai? (taip/ne): ";
+    cin >> pasirinkimas;
+
+    Lok.ND.clear();
+    double grade;
     double sum = 0;
+    int count = 0;
 
-    for (int i = 0; i < m; i++) {
-        cout << "Enter grade for homework " << i + 1 << ": ";
-        cin >> Lok.ND[i];
-        sum += Lok.ND[i];
+    if (pasirinkimas == "taip") {
+
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<> dist(1, 10);
+        std::uniform_int_distribution<> nd_count_dist(3, 10);
+        int m = nd_count_dist(gen);
+        for (int i = 0; i < m; i++) {
+            grade = dist(gen);
+            Lok.ND.push_back(grade);
+            sum += grade;
+            count++;
+        }
+
+
+        Lok.vid = sum / count;
+
+
+        Lok.egz = dist(gen);
+        cout << "Sugeneruota " << m << " Namu darbu ivertinimai ir egzamino ivertinimas" << endl;
+
+    } else if (pasirinkimas == "ne") {
+        string input;
+
+
+        while (true) {
+            cout << "Irasykite namu darbu ivertinimu, kol baigsite, tuomet rasykite 'baigti' kad baigtumete: ";
+            cin >> input;
+
+            if (input == "baigti") {
+                break;
+            }
+
+            try {
+                grade = std::stod(input);
+                Lok.ND.push_back(grade);
+                sum += grade;
+                count++;
+            } catch (const std::invalid_argument&) {
+                cout << "Netinkamas simbolis, rasykite tik skaicius arba 'baigti' " << endl;
+            }
+        }
+
+
+        if (count > 0) {
+            Lok.vid = sum / count;
+        } else {
+            Lok.vid = 0;
+        }
+
+        cout << "Irasykite egzamino ivertinima: ";
+        cin >> Lok.egz;
+    } else {
+        cout << "Netinkamas pasirinkimas. Iveskite 'taip' arba 'ne'." << endl;
     }
-
-    Lok.vid = sum / m;
-
-    cout << "Enter exam grade: ";
-    cin >> Lok.egz;
 }
+
 
 void val(Stud &Lok, bool naudotiMediana) {
     if (naudotiMediana) {
@@ -31,6 +84,7 @@ void val(Stud &Lok, bool naudotiMediana) {
         Lok.rez = 0.4 * Lok.vid + 0.6 * Lok.egz;
     }
 }
+
 
 double skaiciuotiMediana(std::vector<double> &ND) {
     std::sort(ND.begin(), ND.end());
@@ -43,9 +97,9 @@ double skaiciuotiMediana(std::vector<double> &ND) {
     }
 }
 
+
 void output(const Stud &Lok) {
     cout << setw(15) << left << Lok.vardas
          << setw(10) << left << Lok.pavarde
          << setw(15) << right << fixed << setprecision(2) << Lok.rez << endl;
 }
-
