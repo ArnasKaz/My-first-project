@@ -6,22 +6,29 @@ int main()
 {
     vector<Stud> Vec1;
     Stud Temp;
-    cout<<"How many students You have? ";
-    int n;
-    cin>>n;
-    for(int i=0; i < n ; i++){
-    cout<< "Please input user data:"<<endl;
-    ived(Temp);
-    Vec1.push_back(Temp);
-    val(Temp);
-    }
-    cout << setw(15) << left << "Student Name: "
-    << setw(10) << left << "Surname: " << setw(3)
-    << right << "Egzam point : " << endl;
-    for (int i=0; i < n ; i++)
-        output(Vec1.at(i));
+    int n, m;
 
-    system("pause");
+    cout << "How many students do you have? ";
+    cin >> n;
+
+    cout << "How many homework assignments have all students completed? ";
+    cin >> m;
+
+    for (int i = 0; i < n; i++) {
+        cout << "Please input student data:" << endl;
+        ived(Temp, m);
+        val(Temp);
+        Vec1.push_back(Temp);
+    }
+
+
+    cout << setw(15) << left << "Student Name: "
+         << setw(10) << left << "Surname: "
+         << setw(15) << right << "Final Grade: " << endl;
+
+
+    for (int i = 0; i < n; i++)
+        output(Vec1.at(i));
 
     return 0;
 }
