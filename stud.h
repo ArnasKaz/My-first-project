@@ -14,4 +14,7 @@ void output(const Stud &Lok);
 void val(Stud &Lok, bool naudotiMediana);
 double skaiciuotiMediana(std::vector<double> &ND);
 
+
+bool skaitytiIsFailo(const std::string& failo_pavadinimas, std::vector<Stud>& studentai);
+
 #endif // STUD_H_INCLUDED
