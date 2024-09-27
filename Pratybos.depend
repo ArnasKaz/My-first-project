@@ -31,19 +31,37 @@
 1727366855 source:c:\users\arnas\desktop\c++\v0.1 bandymas 1\stud.cpp
 	"Stud.h"
 
-1727369000 source:c:\users\arnas\desktop\c++\v0.1 bandymas 2 (pavykes 1 zingsnis)\main.cpp
+1727370870 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3\main.cpp
 	"biblioteka.h"
 	"stud.h"
 
-1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 2 (pavykes 1 zingsnis)\biblioteka.h
+1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3\biblioteka.h
 	<iostream>
 	<iomanip>
 	<string>
 	<vector>
 
-1727368670 c:\users\arnas\desktop\c++\v0.1 bandymas 2 (pavykes 1 zingsnis)\stud.h
+1727370870 c:\users\arnas\desktop\c++\v0.1 bandymas 3\stud.h
 	"biblioteka.h"
 
-1727369000 source:c:\users\arnas\desktop\c++\v0.1 bandymas 2 (pavykes 1 zingsnis)\stud.cpp
+1727370871 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3\stud.cpp
 	"stud.h"
+	<algorithm>
+
+1727437008 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\main.cpp
+	"biblioteka.h"
+	"stud.h"
+
+1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\biblioteka.h
+	<iostream>
+	<iomanip>
+	<string>
+	<vector>
+
+1727437008 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\stud.h
+	"biblioteka.h"
+
+1727437056 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\stud.cpp
+	"stud.h"
+	<algorithm>
 
