@@ -48,20 +48,16 @@
 	"stud.h"
 	<algorithm>
 
-1727437008 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\main.cpp
+1727381458 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis) - copy\main.cpp
 	"biblioteka.h"
 	"stud.h"
 
-1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\biblioteka.h
+1727366531 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis) - copy\biblioteka.h
 	<iostream>
 	<iomanip>
 	<string>
 	<vector>
 
-1727437008 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\stud.h
+1727381611 c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis) - copy\stud.h
 	"biblioteka.h"
-
-1727437056 source:c:\users\arnas\desktop\c++\v0.1 bandymas 3 (pavykes 2 zingsnis)\stud.cpp
-	"stud.h"
-	<algorithm>
 

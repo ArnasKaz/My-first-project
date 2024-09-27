@@ -8,7 +8,8 @@ struct Stud{
     double vid, med, egz, rez;
 };
 
-void ived(Stud &Lok, int m);
+
+void ived(Stud &Lok);
 void output(const Stud &Lok);
 void val(Stud &Lok, bool naudotiMediana);
 double skaiciuotiMediana(std::vector<double> &ND);
